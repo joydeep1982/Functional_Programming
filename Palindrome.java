@@ -10,11 +10,10 @@ public class Palindrome {
 			.map(num -> num % 10)
 			.limit(String.valueOf(number).length())
 			.reduce(0, (carry, value) -> carry * 10 + value);
-	}
+    }
 	
 	public boolean isPalindromeImperative(int number) {
 		int n = number;
-		
 		int digit;
 		int reverse = 0;
 		
