@@ -8,10 +8,10 @@ public class PrimeNumber {
 		
         boolean divisible = false;
         for (int i = 2; i < number; i++) {
-                if (number % 2 == 0) {
-                        divisible = true;
-                        break;
-                }
+            if (number % 2 == 0) {
+                divisible = true;
+                break;
+            }
         }		
         return number > 1 && !divisible;
 	}

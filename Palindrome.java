@@ -6,9 +6,9 @@ public class Palindrome {
   
   public boolean isPalindromeFunctional(int number) {
 		return number == IntStream.iterate(number, i -> i / 10)
-			.map(num -> num % 10)
-			.limit(String.valueOf(number).length())
-			.reduce(0, (carry, val) -> carry * 10 + val);
+							.map(num -> num % 10)
+							.limit(String.valueOf(number).length())
+							.reduce(0, (carry, val) -> carry * 10 + val);
     }
 	
 	public boolean isPalindromeImperative(int number) {
